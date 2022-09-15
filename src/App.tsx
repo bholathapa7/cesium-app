@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Cesium from 'cesium';
 import 'cesium/Build/Cesium/Widgets/widgets.css';
-import CesiumContent from './Pages/Cesium';
+import { CesiumPage } from './Pages/Cesium';
 
 declare global {
   interface Window {
@@ -18,7 +18,7 @@ function App() {
   return (
     <div className='App'>
       {/* <img src='static/logo.svg' /> */}
-      <CesiumContent />
+      <CesiumPage />
     </div>
   );
 }
